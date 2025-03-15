@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/accordion-js@3.3.2/dist/accordion.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/accordion-js@3.3.2/dist/accordion.min.js" defer></script>
+    <title></title>
+</head>
+<!-- Body -->
+
+<body>
+    <!--HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <nav class="navigation">
+                <a href="./index.html" class="logotype header-logo"><img src="/images/logo.png" class="img-logo"></a>
+                <!-- NAVIGATION -->
+            </nav>
+            <address class="adres">
+                <ul class="page-contact">
+                    <li>
+                        <a href="mailto:lukasz.mielan@gmail.com" class="adres-nav">lukasz.mielan@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+48517268668" class="adres-nav">+48 517 268 668</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION 1 -->
+        <section class="section-one">
+            <div class="container page-hero">
+                <h2 class="hero-h2 fade-in">Witamy na stronie Okna Mielan!</h2>
+                <ul class="bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                function fadeInOnScroll() {
+                    let elements = document.querySelectorAll(".fade-in");
+                    elements.forEach(el => {
+                        let position = el.getBoundingClientRect().top;
+                        let windowHeight = window.innerHeight;
+                        if (position < windowHeight - 50) {
+                            el.classList.add("show");
+                        }
+                    });
+                }
+
+                fadeInOnScroll();
+                window.addEventListener("scroll", fadeInOnScroll);
+            });
+        </script>
+        <!-- SECTION 2 -->
+        <section class="section-two">
+            <div class="container page-about">
+                <h2 class="visually-hidden">O nas</h2>
+                <div class="about-container">
+                    <ul class="about-ul">
+                        <li class="about-li">
+                            <div class="icon-sect-two hidden">
+                                <svg class="icon" width="64" height="64">
+                                    <use href="./svg/symbol-defs(4).svg#icon-star-empty" width="24" height="24"></use>
+                                </svg>
+                            </div>
+                            <div class="text-container">
+                                <h3 class="name-about">Quality</h3>
+                                <p class="text-about">
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about-li">
+                            <div class="icon-sect-two hidden">
+                                <svg class="icon" width="64" height="64">
+                                    <use href="./svg/symbol-defs(4).svg#icon-key" width="24" height="24"></use>
+                                </svg>
+                            </div>
+                            <div class="text-container">
+                                <h3 class="name-about">Quality</h3>
+                                <p class="text-about">
+                                </p>
+                            </div>
+                        </li>
+                        <li class="about-li">
+                            <div class="icon-sect-two hidden">
+                                <svg class="icon" width="64" height="64">
+                                    <use href="./svg/symbol-defs(4).svg#icon-smile" width="24" height="24"></use>
+                                </svg>
+                            </div>
+                            <div class="text-container">
+                                <h3 class="name-about">Quality</h3>
+                                <p class="text-about">
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 3 -->
+        <section class="section-three">
+            <div class="container page-team">
+                <div class="accordion-info-about-me">
+                    <ul class="accordion-info-about-me-list">
+                        <li class="ac about-me-item-container is-active first-element-about">
+                            <h3 class="ac-header acc-caption">
+                                O nas
+                            </h3>
+                            <div class="ac-panel triple about-me-text">
+                                <div class="invisible"></div>
+                                <ul class="all-txt first-margin">
+                                    <li class="acor-txt">
+                                        Okna Mielan to Twój zaufany partner w zakresie okien PCV, aluminiowych i
+                                        drewnianych. Dzięki wieloletniemu doświadczeniu
+                                        dostarczamy produkty najwyższej jakości, łączące nowoczesny design z trwałością
+                                        i doskonałą izolacją.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="ac about-me-item-container">
+                            <h3 class="ac-header acc-caption">
+                                Nasze produkty
+                            </h3>
+
+                            <div class="ac-panel about-me-text">
+                                <div class="invisible"></div>
+                                <ul class="all-txt">
+                                    <li class="acor-txt">Oferujemy szeroki wybór energooszczędnych okien, drzwi oraz
+                                        rolet. Nasze rozwiązania zapewniają skuteczną izolację
+                                        termiczną i akustyczną, zwiększając komfort i oszczędność energii.</li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="ac about-me-item-container">
+                            <h3 class="ac-header acc-caption">
+                                Nasze usługi
+                            </h3>
+
+                            <div class="ac-panel about-me-text">
+                                <div class="invisible"></div>
+                                <ul class="all-txt">
+                                    <li class="acor-txt acor-txt-one">
+                                        Świadczymy kompleksowe usługi – od profesjonalnego doradztwa i precyzyjnych
+                                        pomiarów, po fachowy montaż i serwis. Dbamy
+                                        o każdy etap współpracy, by zapewnić najwyższą jakość obsługi.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="ac about-me-item-container">
+                            <h3 class="ac-header acc-caption">
+                                Dla kogo pracujemy?
+                            </h3>
+
+                            <div class="ac-panel about-me-text">
+                                <div class="invisible"></div>
+                                <ul class="all-txt">
+                                    <li class="acor-txt">Działamy na terenie Częstochowy i okolic, obsługując klientów
+                                        indywidualnych oraz firmy budowlane. Oferujemy rozwiązania
+                                        dostosowane do różnych potrzeb i budżetów.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="ac about-me-item-container">
+                            <h3 class="ac-header acc-caption">
+                                Nasze zalety
+                            </h3>
+
+                            <div class="ac-panel about-me-text">
+                                <div class="invisible"></div>
+                                <ul class="all-txt">
+                                    <li class="acor-txt">Łączymy nowoczesne technologie z solidnym rzemiosłem. Nasze
+                                        produkty wyróżniają się wysoką trwałością, estetyką oraz
+                                        doskonałymi parametrami izolacyjnymi. Priorytetem jest satysfakcja klientów i
+                                        długowieczność naszych rozwiązań.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script type="module">
+            import Accordion from 'accordion-js';
+            import 'accordion-js/dist/accordion.min.css';
+
+            document.addEventListener('DOMContentLoaded', function () {
+
+                new Accordion('.accordion-info-about-me-list', {
+                    duration: 300,
+                    showMultiple: true,
+                    openOnInit: [0],
+                });
+
+            });
+            const firstelement = document.querySelector('.first-element-about');
+        </script>
+        <!-- SECTION 4 -->
+        <section class="section-four">
+            <div class="container">
+                <div id="slider-container">
+                    <div id="top">
+                        <img src="/images/arrow.png" alt="" class="arrow arrow-left">
+                        <div id="frame">
+                            <div id="slider">
+                                <img src="/images/photo-1.png" alt="" class="slider-image">
+                                <img src="/images/photo-2.png" alt="" class="slider-image">
+                                <img src="/images/photo-3.png" alt="" class="slider-image">
+                                <img src="/images/photo-4.png" alt="" class="slider-image">
+                                <img src="/images/photo-5.png" alt="" class="slider-image">
+                            </div>
+                        </div>
+                        <img src="/images/arrow.png" alt="" class="arrow arrow-right">
+                    </div>
+                    <div id="bottom"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/script.js"></script>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container page-footer">
+            <div class="footer-container">
+                <a href="./index.html" class="logotype logotype-footer"></a>
+                <p class="text-footer"></p>
+            </div>
+            <div class="footer-socialmedia">
+                <p class="p-socialmedia">Social media</p>
+                <ul class="ul-footer">
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="li-footer">
+                        <a href="" class="link-footer-icon">
+                            <svg width="24" height="24" class="icon-footer">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
