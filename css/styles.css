@@ -91,17 +91,18 @@ button {
 }
 
 .adres-nav {
+    font-family: 'Inter Tight', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: #fff100;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adres-nav:focus,
 .adres-nav:hover {
-    color: #404BBF;
+    color: #faf367;
 }
 
 /* SECTION 1 MAIN */
@@ -131,10 +132,8 @@ button {
 .hero-h2 {
     color: #fff100;
     font-size: 60px;
-}
-
-.hero-p {
-    color: #faf367;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
 }
 
 .fade-in {
@@ -276,11 +275,6 @@ button {
     margin: 0 auto;
 }
 
-.text-about {
-    color: gold;
-    width: 300px;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -309,27 +303,38 @@ button {
 
 .about-li {
     border-radius: 20px;
-        padding: 24px;
-        width: 344px;
-        height: 270px;
-        background: #242527;
+    padding: 24px;
+    width: 344px;
+    height: 270px;
+    background: #242527;
+}
+
+.icon-sect-two {
+    margin-bottom: 54px;
+}
+
+.icon {
+    fill: #fff100;
 }
 
 .name-about {
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
-        font-size: 20px;
-        line-height: 1.5;
-        letter-spacing: -.02em;
-        color: #fafafa;
-        margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -.02em;
+    color: #fff100;
+    margin-bottom: 8px;
 }
 
 .text-about {
+    font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: -.02em;
-        color: #fafafa99;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -.02em;
+    color: #faf367;
+    width: 300px;
 }
 
 /* SECTION 3 OUR TEAM */
@@ -365,18 +370,24 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     padding-top: 32px;
 }
 
-.ac-header.acc-caption .ac-trigger {
+.ac-header.acc-caption {
     text-align: left;
     margin-bottom: 24px;
     padding: 0;
-    font-family: inherit;
-    color: rgba(250, 250, 250, 0.4);
+    font-family: 'Inter Tight', sans-serif;
+    color: #fff100;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: -0.32px;
     text-transform: uppercase;
+}
+
+.acor-txt {
+    color: #faf367;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
 }
 
 .ac-text p {
@@ -387,10 +398,6 @@ ul.accordion-info-about-me-list .about-me-item-container.ac {
     font-weight: 500;
     color: #fafafa;
     padding: 0;
-}
-
-.acor-txt-one {
-    max-width: 360px;
 }
 
 .acor-txt-two {
@@ -605,10 +612,9 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 /* FOOTER */
 .footer {
     background-color: #121313;
-    ;
-
     min-width: 1440px;
-    padding: 100px 0;
+    padding: 50px 0;
+    border-top: 1px solid #fff100;
 }
 
 .page-footer {
@@ -624,27 +630,22 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     margin-right: 120px
 }
 
+.img-logo-footer {
+    width: 80px;
+    height: 80px;
+}
+
 .text-footer {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: #faf367;
 
     margin: 0;
     padding: 0;
     max-width: 264px;
-}
-
-.logo-footer {
-    font-family: "Raleway", sans-serif;
-    color: #f4f4fd;
-
-    max-width: 264px;
-}
-
-.logotype-footer {
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
 .footer-socialmedia {
@@ -655,11 +656,12 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 }
 
 .p-socialmedia {
-    font-weight: 500;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: #fff100;
     padding: 0;
     margin-bottom: 16px;
 }
@@ -674,7 +676,7 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #4d5ae5;
+    background-color: #fff100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -683,5 +685,153 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 
 .link-footer-icon:hover,
 .link-footer-icon:focus {
-    background-color: #31D0AA;
+    background-color: #faf367;
+}
+
+
+/* MEDIA */
+/* Медиа-запрос для планшетов (768px - 1024px) */
+@media only screen and (max-width: 1024px) {
+    .container {
+            max-width: 768px;
+        }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about-ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .about-li {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-about {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Адаптация слайдера */
+    #slider {
+        width: 100%;
+    }
+
+    #frame {
+        width: 100%;
+        height: auto;
+    }
+
+    #slider-image {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Кнопки слайдера */
+    .arrow {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pagination-circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Футер */
+.footer {
+    max-width: 1024px;
+    min-width: 768px;
+}
+
+    .page-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-container {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .ul-footer {
+        justify-content: center;
+    }
+}
+
+/* Медиа-запрос для телефонов (до 768px) */
+@media only screen and (max-width: 768px) {
+
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-ul {
+        gap: 16px;
+    }
+
+    .about-li {
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .text-about {
+        font-size: 14px;
+    }
+
+    /* Слайдер */
+    #frame {
+        width: 100%;
+        height: 300px;
+    }
+
+    .arrow {
+        width: 60px;
+        height: 60px;
+    }
+
+    .pagination-circle {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Футер */
+    .footer {
+        min-width: 100%;
+        padding: 30px 0;
+    }
+
+    .page-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-container {
+        margin-right: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .img-logo-footer {
+        margin: 0 auto;
+    }
+
+    .ul-footer {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .link-footer-icon {
+        width: 35px;
+        height: 35px;
+    }
 }
