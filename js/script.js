@@ -6,10 +6,14 @@ const bottom = document.getElementById("bottom");
 
 let currentSlideIndex = 0;
 const totalSlides = slides.length;
-const sliderWidth = 800; // Ширина одного слайда
 const paginationCircles = [];
 
-// Создаем круги пагинации
+// Функція для визначення актуальної ширини слайда
+function getSlideWidth() {
+    return slides[0].clientWidth; // або slider.offsetWidth / totalSlides
+}
+
+// Створення пагінації
 function createPaginationCircle(index) {
     const div = document.createElement("div");
     div.className = "pagination-circle";
@@ -35,7 +39,8 @@ function updatePagination() {
 
 function changeSlide(index) {
     currentSlideIndex = index;
-    slider.style.transform = `translateX(${-currentSlideIndex * sliderWidth}px)`;
+    const slideWidth = getSlideWidth();
+    slider.style.transform = `translateX(${-currentSlideIndex * slideWidth}px)`;
     updatePagination();
 }
 
@@ -49,9 +54,12 @@ function previousSlide() {
     changeSlide(currentSlideIndex);
 }
 
-// Слушатели событий для стрелок
+// Слухачі подій
 arrowRight.addEventListener("click", nextSlide);
 arrowLeft.addEventListener("click", previousSlide);
 
-// Инициализация
+// Додати адаптацію при зміні розміру екрана
+window.addEventListener("resize", () => changeSlide(currentSlideIndex));
+
+// Ініціалізація
 addPagination();

@@ -233,20 +233,51 @@
                         <img src="/images/arrow.png" alt="" class="arrow arrow-left">
                         <div id="frame">
                             <div id="slider">
-                                <img src="./images/photo-1.png" alt="" class="slider-image">
-                                <img src="./images/photo-2.png" alt="" class="slider-image">
-                                <img src="./images/photo-3.png" alt="" class="slider-image">
-                                <img src="./images/photo-4.png" alt="" class="slider-image">
-                                <img src="./images/photo-5.png" alt="" class="slider-image">
+                                <!-- Перше зображення -->
+                                <img src="./images/photo-1.png" srcset="
+                        ./images/phone-photo-1.png 320w,
+                        ./images/tab-photo-1.png 768w,
+                        ./images/photo-1.png 1024w
+                      " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw" alt="" class="slider-image" />
+        
+                                <!-- Друге зображення -->
+                                <img src="./images/photo-2.png" srcset="
+                        ./images/phone-photo-2.png 320w,
+                        ./images/tab-photo-2.png 768w,
+                        ./images/photo-2.png 1024w
+                      " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw" alt="" class="slider-image" />
+        
+                                <!-- Третє зображення -->
+                                <img src="./images/photo-3.png" srcset="
+                        ./images/phone-photo-3.png 320w,
+                        ./images/tab-photo-3.png 768w,
+                        ./images/photo-3.png 1024w
+                      " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw" alt="" class="slider-image" />
+        
+                                <!-- Четверте зображення -->
+                                <img src="./images/photo-4.png" srcset="
+                        ./images/phone-photo-4.png 320w,
+                        ./images/tab-photo-4.png 768w,
+                        ./images/photo-4.png 1024w
+                      " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw" alt="" class="slider-image" />
+        
+                                <!-- П’яте зображення -->
+                                <img src="./images/photo-5.png" srcset="
+                        ./images/phone-photo-5.png 320w,
+                        ./images/tab-photo-5.png 768w,
+                        ./images/photo-5.png 1024w
+                      " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 100vw" alt="" class="slider-image" />
                             </div>
                         </div>
-                        <img src="./images/arrow.png" alt="" class="arrow arrow-right">
+                        <img src="/images/arrow.png" alt="" class="arrow arrow-right">
                     </div>
                     <div id="bottom"></div>
                 </div>
             </div>
         </section>
         <script src="./js/script.js"></script>
+
+
     </main>
     <!-- FOOTER -->
     <footer class="footer">
@@ -260,16 +291,9 @@
                 <p class="p-socialmedia">Media społecznościowe</p>
                 <ul class="ul-footer">
                     <li class="li-footer">
-                        <a href="" class="link-footer-icon">
+                        <a href="https://www.facebook.com/p/Mielan-okna-drzwi-100083769370341/" class="link-footer-icon">
                             <svg width="24" height="24" class="icon-footer">
                                 <use href="./svg/symbol-defs(4).svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="li-footer">
-                        <a href="" class="link-footer-icon">
-                            <svg width="24" height="24" class="icon-footer">
-                                <use href="./svg/symbol-defs(4).svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
