@@ -720,17 +720,17 @@ ul.accordion-info-about-me-list li.ac.is-active .about-me-arrow-icon {
 
     /* Адаптация слайдера */
     #slider {
-        width: 100%;
+        width: 400px;
     }
 
     #frame {
-        width: 100%;
+        width: 400px;
         height: auto;
     }
 
     #slider-image {
-        width: 100%;
-        height: auto;
+        width: 400px;
+        height: 200px;
     }
 
     /* Кнопки слайдера */
